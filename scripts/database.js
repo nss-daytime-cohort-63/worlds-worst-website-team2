@@ -50,3 +50,7 @@ database = [
         phrase: "Look behind you!"
     }
 ]
+
+export const getDatabase = () => {
+    return database
+}
