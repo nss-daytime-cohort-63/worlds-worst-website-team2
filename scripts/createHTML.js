@@ -6,15 +6,15 @@ export const databasePopups = () => {
     let htmlString = ""
 
     // Create HTNL representations of each fish here
-    for (const fish of fishes) {
-
+    for (const object of database) {
+        
         // Why is there a backtick used for this string?
         htmlString += `<div class="popup" onclick="myFunction()">Click me!
-        <span class="popuptext" id="myPopup">Popup text...</span>
+        <span class="popuptext" id="myPopup">${object.phrase}</span>
+        <img class="image" src=${object.image}>
                     </div>
 `
     }
-    htmlString += `</article>`
 
     return htmlString
 }
